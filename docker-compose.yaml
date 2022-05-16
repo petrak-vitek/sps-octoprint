@@ -14,3 +14,7 @@ services:
     #  - /dev/video0:/dev/video0
     volumes:
      - ./volumes/octoprint:/octoprint
+    # uncomment the lines below to ensure camera streaming is enabled when
+    # you add a video device
+    #environment:
+    #  - ENABLE_MJPG_STREAMER=true

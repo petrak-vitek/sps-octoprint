@@ -2,9 +2,10 @@ version: '2.4'
 
 services:
 
-  octoprint:
+  prusa1:
 #    image: octoprint/octoprint
-    build: .
+    build: octoprint-builld
+    container_name: prusa1
     restart: unless-stopped
 #    ports:
 #      - 980:80

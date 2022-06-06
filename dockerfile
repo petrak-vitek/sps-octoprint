@@ -16,4 +16,5 @@ RUN apt-get install -y lcov
 RUN apt-get install -y valgrind
 
 # install plugin
-#RUN pip install https://github.com/battis/OctoPrint-LDAP/archive/master.zip
+ENV PIP_USER false
+RUN pip install https://github.com/battis/OctoPrint-LDAP/archive/master.zip
